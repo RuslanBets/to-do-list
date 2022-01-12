@@ -1,7 +1,7 @@
 const ul = document.getElementById('tasks')
 const form = document.getElementById('new-task-form')
 const input = form.querySelector('input')
-const tasks = JSON.parse(localStorage.tasks)
+const tasks = JSON.parse(localStorage.tasks || '[]')
 
 
 form.onsubmit = function () {
